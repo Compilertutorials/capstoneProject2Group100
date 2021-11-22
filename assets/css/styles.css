@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
 body{
   font-family: 'Barlow', sans-serif;
   line-height: 1.6;
@@ -87,12 +88,19 @@ img{
   justify-content: center;
   align-items: center;
   width: 100px;
+  height: 40px;
   background-color: #fff;
   border-radius: 18px;
+  font-family: 'Fraunces', serif;
+  
+}
+.navbar-btn a{
+  padding: 0;
+  font-size: 14px;
 }
 
 .button {
-  color: rgb(14, 13, 13);
+  color: hsl(213, 9%, 39%);
   padding: 0;
   transition: all 0.3s ease;
 }
@@ -131,15 +139,19 @@ img{
 
 .hero-text h1{
   font-family: 'Fraunces', serif;
-  width: 250px;
+  font-weight: 900;
+  font-size: 30px;
+  width: 300px;
+  color: hsl(212, 27%, 19%);
 }
 
 .hero-text p{
   width: 400px;
+  color: hsl(232, 10%, 55%);
 }
 
 .hero-text a{
-  color: black;
+  color: hsl(212, 27%, 19%);
   font-family: 'Fraunces', serif;
   font-size: 15px;
   border-bottom: 5px solid hsl(51, 100%, 49%);
@@ -155,8 +167,8 @@ img{
   flex-direction: row;
   max-width: 1440px;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
 }
@@ -172,15 +184,151 @@ img{
 
 .audience-text h2{
   font-family: 'Fraunces', serif;
-  width: 250px;
+  font-weight: 900;
+  font-size: 30px;
+  width: 400px;
+  color: hsl(212, 27%, 19%);
 }
 
 .audience-text p{
   width: 400px;
+  color: hsl(232, 10%, 55%);
 }
+
 .audience-text a{
-  color: black;
+  color: hsl(212, 27%, 19%);
   font-family: 'Fraunces', serif;
   font-size: 15px;
-  border-bottom: 5px solid hsl(7, 99%, 70%);
+  border-bottom: 4px solid  hsl(7, 99%, 70%);
 }
+
+/**
+------------------------------------
+---------- Image Section------------
+------------------------------------
+**/
+.image-section{
+  display: grid;
+  flex-direction: row;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 -30px;
+  padding: 0;
+}
+
+.graphic-design{
+  position: relative;
+}
+
+.photography{
+  position: relative;
+}
+
+.image-section h2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fraunces', serif;         
+}
+
+.image-section p{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fraunces', serif;  
+  text-align: center;
+  width: 450px;        
+}
+
+.graphic-design h2 {
+  color: hsl(167, 40%, 24%)
+}
+
+.graphic-design p{
+  color: hsl(167, 40%, 24%)
+}
+
+.photography h2{
+  color: hsl(198, 62%, 26%);
+}
+
+.photography p{
+  color: hsl(198, 62%, 26%);
+}
+
+/**
+------------------------------------
+---------- Testimonials Section-----
+------------------------------------
+**/
+.client-testimonials{
+  background-color:hsl(0, 0%, 100%);
+  margin-top: 140px;
+}
+
+.client-testimonials h2{
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-size: 18px; 
+  word-spacing: 3px; 
+  letter-spacing: 4px;
+  color: hsl(210, 4%, 67%);
+}
+
+.client-testimonials img{
+  width: 25%;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonies{
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  justify-content: space-between;
+}
+
+.testimonies .emily .emily-img{
+  text-align: center;
+  justify-content: center;
+}
+
+.testimonies p{
+  margin-top: 55px;
+  width: 350px;
+  font-weight: 400;
+  color: hsl(213, 9%, 39%);
+}
+
+.testimonies h2{
+  margin-top: 50px;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 1px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+.testimonies h3{
+  font-size: 14px;
+  color: hsl(210, 4%, 67%);
+}
+
+.emily{
+  text-align: center;
+}
+
+.thomas{
+  text-align: center;
+}
+
+.jen{
+  text-align: center;
+}
+
